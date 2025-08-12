@@ -18,7 +18,7 @@ export default function NavBar() {
         <div className="nav-section">
             <header className="nav-section-header">Cultural Work</header>
             <Link href="/travel-log" className="nav-link">Travel Log</Link>
-            <Link href="/creativity-modalities" className="nav-link">Creative Modalities</Link>
+            <Link href="/creative-modalities" className="nav-link">Creative Modalities</Link>
         </div>
         <div className="nav-section">
             <header className="nav-section-header">Meta</header>
