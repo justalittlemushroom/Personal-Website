@@ -10,16 +10,14 @@ export default function NavBar() {
                 src="/victorian-ornamental-corner.PNG" 
                 alt="" 
                 width={300}
-                height={150}
-                quality={100}/>
+                height={150}/>
         </div>
         <div className="corner-ornament bottom-right">
             <Image 
                 src="/victorian-ornamental-corner.PNG" 
                 alt="" 
                 width={300}
-                height={150}
-                quality={100}/>
+                height={150}/>
         </div>
         <Link href="/" className="home-button"> <Home size={48} /> </Link>
         <div className="nav-section">
