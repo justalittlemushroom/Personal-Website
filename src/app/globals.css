@@ -40,6 +40,10 @@ h3 {
   line-height: 35px;
 }
 
+a:hover {
+  color: var(--hyperlink);
+}
+
 .corner-ornament {
   position: absolute;
   pointer-events: none;
