@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar';
+import ContactInfo from './components/ContactInfo';
 
 export default function Home() {
   return (
@@ -34,19 +35,7 @@ export default function Home() {
           <div className="project-preview"></div>
         </div>
       </section>
-    <footer>
-      <section className="footer">
-      <div className="contact-info">
-        <h3>Contact Me</h3>
-        <h2> 
-          Email: wan.lis@northeastern.edu<br />
-          Discord: justalittlemushroominthecorner<br />
-          GitHub: github.com/justalittlemushroom<br />
-          LinkedIn: linkedin.com/in/lisa-wan
-        </h2>
-      </div>
-      </section>
-      </footer>
+      <ContactInfo /> 
     </main>
   )
 }

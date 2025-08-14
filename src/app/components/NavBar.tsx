@@ -1,9 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Home } from 'lucide-react'
 
 export default function NavBar() {
   return (
     <nav className="nav-bar">
+        <div className="corner-ornament top-left">
+            <Image 
+                src="/victorian-ornamental-corner.png" 
+                alt="" 
+                width={300}
+                height={150}
+                quality={100}/>
+        </div>
+        <div className="corner-ornament bottom-right">
+            <Image 
+                src="/victorian-ornamental-corner.png" 
+                alt="" 
+                width={300}
+                height={150}
+                quality={100}/>
+        </div>
         <Link href="/" className="home-button"> <Home size={48} /> </Link>
         <div className="nav-section">
             <header className="nav-section-header">Personal Journey</header>

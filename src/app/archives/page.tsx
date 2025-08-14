@@ -1,13 +1,15 @@
 import NavBar from '../components/NavBar';
+import ContactInfo from '../components/ContactInfo';
 
 export default function Archives() {
   return (
     <main> 
       <NavBar /> 
-      <section className="section-header"> 
+      <header className="section-header"> 
       <h1>Archives</h1>
       <h2>In Progress</h2>
-      </section>
+      </header>
+      <ContactInfo />
     </main>
   )
 }

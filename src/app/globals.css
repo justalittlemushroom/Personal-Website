@@ -40,19 +40,40 @@ h3 {
   line-height: 35px;
 }
 
+.corner-ornament {
+  position: absolute;
+  pointer-events: none;
+  filter: hue-rotate(180deg) saturate(0.5);
+}
+
+.top-left {
+  top: -85px;
+  right: -150px;
+  transform: rotate(10deg);
+}
+
+.bottom-right {
+  bottom: -85px;
+  left: -150px;
+  transform: rotate(190deg);
+}
+
 .nav-bar {
+  position: relative;
   background-color: var(--nav-bg);
-  padding: 8px 104px;
-  margin: 30px 87px 48px 87px; 
+  width: 1264px;
+  height: 112px;
+  margin: 30px auto 48px auto;
+  padding: 8px 48px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 104px;
   border-radius: 8px;
 }
 
 .nav-section {
-  margin: 0 auto;
+  width: 192px;
+  margin: 8px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,9 +91,8 @@ h3 {
   font-size: 16px;
   font-family: var(--font-kaisei);
   font-weight: bold;
-  letter-spacing: -0.02em;
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.02em;
 }
 
 .nav-link:hover {
@@ -80,16 +100,12 @@ h3 {
   letter-spacing: -0.05em;
 }
 
-.nav-link:nth-child(1) { animation-delay: 0.05s; }
-.nav-link:nth-child(2) { animation-delay: 0.1s; }
-.nav-link:nth-child(3) { animation-delay: 0.15s; }
-
 .home-button {
+  margin: 8px auto;
   color: #000000; 
   display: flex;
-  align-items: center;
-  justify-content: center;
   transition: all 0.2s;
+  flex-shrink: 0;
 }
 
 .home-button:hover {
@@ -98,14 +114,16 @@ h3 {
 }
 
 .section-header {
-  margin: 48px 87px;
+  margin: 48px auto;
+  width: 1264px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
 .section-content {
-  margin: 48px 87px;
+  margin: 48px auto;
+  width: 1264px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -137,8 +155,10 @@ h3 {
 }
 
 .contact-info {
-  margin: 48px 87px;
+  margin: 48px auto;
+  width: 1264px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
+
