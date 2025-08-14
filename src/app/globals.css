@@ -40,8 +40,20 @@ h3 {
   line-height: 35px;
 }
 
+p {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: var(--font-raleway);
+  line-height: 28px;
+}
+
 a:hover {
   color: var(--hyperlink);
+}
+
+footer {
+  background-color: var(--preview);
+  display: flex;
 }
 
 .corner-ornament {
@@ -150,12 +162,6 @@ a:hover {
 .project-preview:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-
-.footer {
-  background-color: var(--preview);
-  display: flex;
 }
 
 .contact-info {
