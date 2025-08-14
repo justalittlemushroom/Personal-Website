@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav className="nav-bar">
         <div className="corner-ornament top-left">
             <Image 
-                src="/victorian-ornamental-corner.png" 
+                src="/victorian-ornamental-corner.PNG" 
                 alt="" 
                 width={300}
                 height={150}
@@ -15,7 +15,7 @@ export default function NavBar() {
         </div>
         <div className="corner-ornament bottom-right">
             <Image 
-                src="/victorian-ornamental-corner.png" 
+                src="/victorian-ornamental-corner.PNG" 
                 alt="" 
                 width={300}
                 height={150}
