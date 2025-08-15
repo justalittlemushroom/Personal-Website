@@ -83,7 +83,7 @@ footer {
 .nav-bar {
   position: relative;
   background-color: var(--nav-bg);
-  width: 1264px;
+  width: calc(100vw - 96px);
   height: 112px;
   margin: 30px auto 48px auto;
   padding: 8px 48px;
@@ -137,7 +137,7 @@ footer {
 
 .section-header {
   margin: 48px auto;
-  width: 1264px;
+  width: calc(100vw - 96px);
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -145,7 +145,7 @@ footer {
 
 .section-content {
   margin: 48px auto;
-  width: 1264px;
+  width: calc(100vw - 96px);
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -173,7 +173,7 @@ footer {
 .contact-info {
   margin: 48px auto auto auto;
   padding: 24px 0px 30px 0px;
-  width: 1264px;
+  width: calc(100vw - 96px);
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -200,9 +200,9 @@ footer {
     font-size: 20px;
     line-height: 23px;
   }
-  
+
   .nav-bar {
-    width: 896px;
+    width: calc(100vw - 48px);
     margin: 24px auto 30px auto;
     padding: 8px 32px;
     border-radius: 8px;
@@ -224,20 +224,20 @@ footer {
 
   .section-header {
     margin: 24px auto;
-    width: 896px;
+    width: calc(100vw - 48px);
     gap: 16px;
   }
 
   .section-content {
     margin: 24px auto;
-    width: 896px;
+    width: calc(100vw - 48px);
     gap: 16px;
   }
   
   .contact-info {
     margin: 24px auto auto auto;
     padding: 16px 0px 24px 0px;
-    width: 896px;
+    width: calc(100vw - 48px);
     gap: 16px;
   }
 }
