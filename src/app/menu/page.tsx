@@ -2,15 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Home, Menu } from 'lucide-react'
-import useDeviceType from '../hooks/useDeviceType';
+import { Home, X } from 'lucide-react'
 
-export default function NavBar() {
-  const { isMobile, isTablet } = useDeviceType();
-  const homeIconSize = isTablet ? 32 : 48;
-
+export default function Menu() {
   return (
-    (isMobile) ? <Link href="/menu" className="home-button"> <Menu size={24} className="menu-button"/> </Link> : 
     <div className="nav-container">
         <nav className="nav-bar">
             <div className="corner-ornament top-right">
@@ -27,7 +22,8 @@ export default function NavBar() {
                     width={300}
                     height={150}/>
             </div>
-            <Link href="/" className="home-button"> <Home size={homeIconSize}/> </Link>
+            <Link href="/" className="x-button"> <X size={24}/> </Link>
+            <Link href="/" className="home-button"> <Home size={32}/> </Link>
             <div className="nav-section">
                 <header className="nav-section-header">Personal Journey</header>
                 <Link href="/about-me" className="nav-link">About Me</Link>
@@ -47,6 +43,15 @@ export default function NavBar() {
                 <header className="nav-section-header">Meta</header>
                 <Link href="/behind-the-blog" className="nav-link">Behind the Blog</Link>
                 <Link href="/archives" className="nav-link">Archives</Link>
+            </div>
+            <div className="nav-section">
+                <header className="nav-section-header">Contact Me</header>
+                <p>
+                Email: <a href="mailto:wan.lis@northeastern.edu">wan.lis@northeastern.edu</a><br />
+                Discord: justalittlemushroominthecorner<br />
+                GitHub: <a href="https://github.com/justalittlemushroom" target="_blank" rel="noopener noreferrer">github.com/justalittlemushroom</a><br />
+                LinkedIn: <a href="https://linkedin.com/in/lisa-wan" target="_blank" rel="noopener noreferrer">linkedin.com/in/lisa-wan</a><br />
+                </p>
             </div>
         </nav>
     </div>
