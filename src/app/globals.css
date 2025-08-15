@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Color Variables */
 :root {
   --bg: #EDEDED;
   --nav-bg: rgba(173, 173, 214, 0.35);
@@ -14,11 +15,13 @@
 }
 
 body {
+  overflow-x: hidden;
   color: var(--text);
   font-family: var(--font-inder);
   background-color: var(--bg);
 }
 
+/* Default (Desktop) */
 h1 {
   font-size: 48px;
   font-weight: normal;
@@ -61,13 +64,13 @@ footer {
   filter: hue-rotate(180deg) saturate(0.5);
 }
 
-.top-left {
+.top-right {
   top: -85px;
   right: -150px;
   transform: rotate(10deg);
 }
 
-.bottom-right {
+.bottom-left {
   bottom: -85px;
   left: -150px;
   transform: rotate(190deg);
@@ -147,7 +150,6 @@ footer {
 .projects-container {
   display: flex;
   gap: 20px;
-  width: 100%;
 }
 
 .project-preview {
@@ -171,3 +173,80 @@ footer {
   flex-direction: column;
   gap: 32px;
 }
+
+/* Tablet (1024px and Below) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+/*
+  .top-right {
+
+  }
+
+  .bottom-left {
+    
+  }
+*/
+  .nav-bar {
+    width: 896px;
+    margin: 24px auto 30px auto;
+    padding: 8px 32px;
+    border-radius: 8px;
+  }
+
+  .nav-section {
+    width: 158px;
+    margin: 8px auto;
+    gap: 6px;
+  }
+
+  .nav-section-header {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .section-header {
+    margin: 24px auto;
+    width: 896px;
+    gap: 16px;
+  }
+
+  .section-content {
+    margin: 24px auto;
+    width: 896px;
+    gap: 16px;
+  }
+  
+  .contact-info {
+    margin: 24px auto auto auto;
+    padding: 16px 0px 24px 0px;
+    width: 896px;
+    gap: 16px;
+  }
+}
+
+/* Mobile (768px and Below) */
+/*
+@media (max-width: 768px) {
+}
+*/

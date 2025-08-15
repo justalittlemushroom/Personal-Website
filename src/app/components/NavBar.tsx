@@ -1,25 +1,32 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
 import { Home } from 'lucide-react'
+import useDeviceType from '../hooks/useDeviceType';
 
 export default function NavBar() {
+  const { isTablet } = useDeviceType();
+  const homeIconSize = isTablet ? 32 : 48;
+
+
   return (
     <nav className="nav-bar">
-        <div className="corner-ornament top-left">
+        <div className="corner-ornament top-right">
             <Image 
                 src="/victorian-ornamental-corner.PNG" 
                 alt="" 
                 width={300}
                 height={150}/>
         </div>
-        <div className="corner-ornament bottom-right">
+        <div className="corner-ornament bottom-left">
             <Image 
                 src="/victorian-ornamental-corner.PNG" 
                 alt="" 
                 width={300}
                 height={150}/>
         </div>
-        <Link href="/" className="home-button"> <Home size={48} /> </Link>
+        <Link href="/" className="home-button"> <Home size={homeIconSize} /> </Link>
         <div className="nav-section">
             <header className="nav-section-header">Personal Journey</header>
             <Link href="/about-me" className="nav-link">About Me</Link>
