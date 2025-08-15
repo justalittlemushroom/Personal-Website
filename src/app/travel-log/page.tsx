@@ -18,6 +18,14 @@ export default function TravelLog() {
           <div className="project-preview"></div>
           <div className="project-preview"></div>
         </div>
+        <h3>Seattle</h3>
+        <div className="projects-container">
+          <div className="project-preview"></div>
+          <div className="project-preview"></div>
+          <div className="project-preview"></div>
+          <div className="project-preview"></div>
+          <div className="project-preview"></div>
+        </div>
         <h3>Eastern Canada</h3>
         <div className="projects-container">
           <div className="project-preview"></div>

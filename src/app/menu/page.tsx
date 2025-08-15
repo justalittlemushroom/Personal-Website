@@ -3,8 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Home, X } from 'lucide-react'
+import { useRouter } from "next/navigation";
 
 export default function Menu() {
+  const router = useRouter();
+  
   return (
     <div className="nav-container">
         <nav className="nav-bar">
@@ -22,7 +25,7 @@ export default function Menu() {
                     width={300}
                     height={150}/>
             </div>
-            <Link href="/" className="x-button"> <X size={24}/> </Link>
+            <Link href="/" className="x-button" onClick={() => router.back()}> <X size={24}/> </Link>
             <Link href="/" className="home-button"> <Home size={32}/> </Link>
             <div className="nav-section">
                 <header className="nav-section-header">Personal Journey</header>
