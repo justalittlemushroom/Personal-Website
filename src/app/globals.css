@@ -12,6 +12,7 @@
 
 * {
   transition: all 0.3s ease;
+  border: 1px solid red !important;
 }
 
 body {
@@ -56,6 +57,10 @@ a:hover {
 
 footer {
   background-color: var(--preview);
+}
+
+.nav-container {
+  overflow: hidden;
 }
 
 .corner-ornament {
@@ -195,15 +200,7 @@ footer {
     font-size: 20px;
     line-height: 23px;
   }
-/*
-  .top-right {
-
-  }
-
-  .bottom-left {
-    
-  }
-*/
+  
   .nav-bar {
     width: 896px;
     margin: 24px auto 30px auto;
