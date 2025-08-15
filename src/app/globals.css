@@ -325,9 +325,11 @@ footer {
   }
 
   .menu-button {
+    width: clamp(24px, 8vw, 60px);
+    height: clamp(24px, 8vw, 60px);
     position: absolute;
     top: 16px;
-    right: 20px;
+    right: 16px;
     color: var(--text);
     display: flex;
     transition: all 0.2s;
