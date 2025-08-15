@@ -12,7 +12,6 @@
 
 * {
   transition: all 0.3s ease;
-  border: 1px solid red !important;
 }
 
 body {
@@ -155,6 +154,7 @@ footer {
 .projects-container {
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 
 .project-preview {
