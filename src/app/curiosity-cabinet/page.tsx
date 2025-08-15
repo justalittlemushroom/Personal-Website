@@ -1,5 +1,3 @@
-"use client"
-
 import NavBar from '../components/NavBar';
 import ContactInfo from '../components/ContactInfo';
 

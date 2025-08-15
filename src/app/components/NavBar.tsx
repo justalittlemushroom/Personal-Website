@@ -8,10 +8,9 @@ import useDeviceType from '../hooks/useDeviceType';
 export default function NavBar() {
   const { isMobile, isTablet } = useDeviceType();
   const homeIconSize = isTablet ? 32 : 48;
-  const menuIconSize = window.innerWidth > 600 ? 44 : 24;
 
   return (
-    (isMobile) ? <Link href="/menu" className="menu-button"> <Menu size={menuIconSize}/> </Link> : 
+    (isMobile) ? <Link href="/menu" className="menu-button"> <Menu size={24}/> </Link> : 
     <div className="nav-container">
         <nav className="nav-bar">
             <div className="corner-ornament top-right">

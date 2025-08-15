@@ -328,8 +328,7 @@ footer {
     width: clamp(24px, 8vw, 60px);
     height: clamp(24px, 8vw, 60px);
     position: absolute;
-    top: 16px;
-    right: 16px;
+    left: calc(100vw - 40px);
     color: var(--text);
     display: flex;
     transition: all 0.2s;
