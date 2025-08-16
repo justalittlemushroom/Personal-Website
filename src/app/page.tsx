@@ -1,9 +1,11 @@
+import DarkModeToggle from './components/DarkModeToggle';
 import NavBar from './components/NavBar';
 import ContactInfo from './components/ContactInfo';
 
 export default function Home() {
   return (
     <main> 
+      <DarkModeToggle />
       <NavBar /> 
       <header className="section-header"> 
       <h1>Hi! I&apos;m<br />Lisa Wan</h1>

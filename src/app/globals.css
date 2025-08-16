@@ -10,6 +10,15 @@
   --preview-outline: #838383;
 }
 
+[data-theme="dark"] {
+  --bg: #3E3E3E;
+  --nav-bg: rgba(109, 91, 197, 0.35);
+  --text: #EDEDED;
+  --hyperlink: #ADADD6;
+  --preview: #838383;
+  --preview-outline: #D9D9D9;
+}
+
 body {
   overflow-x: hidden;
   color: var(--text);
@@ -74,6 +83,12 @@ footer {
   bottom: -85px;
   left: -150px;
   transform: rotate(190deg);
+}
+
+.theme-toggle {
+  color: var(--text);
+  padding: 8px 8px;
+  display: flex;
 }
 
 .nav-bar {
@@ -240,7 +255,6 @@ footer {
 }
 
 /* Mobile (768px and Below) */
-
 @media (max-width: 768px) {
   h1 {
     font-size: 32px;
@@ -283,6 +297,13 @@ footer {
     top: -65px;
     left: -61px;
     transform: scaleX(-1) rotate(10deg);
+  }
+
+  .theme-toggle {
+    position: fixed;
+    right: clamp(0px, 2vw, 8px);
+    bottom: clamp(0px, 2vw, 8px);
+    transform: scale(0.9);
   }
 
   .nav-bar {

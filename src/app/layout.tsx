@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inder, Raleway, Kaisei_HarunoUmi } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 const inder = Inder({
   weight: ["400"],
@@ -23,6 +24,9 @@ const kaisei = Kaisei_HarunoUmi({
 export const metadata: Metadata = {
   title: "Lisa Wan - Portfolio",
   description: "Computer Science student at Northeastern",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -33,7 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inder.variable} ${raleway.variable} ${kaisei.variable} font-sans bg-[#EDEDED]`}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

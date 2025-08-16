@@ -1,9 +1,11 @@
+import DarkModeToggle from '../components/DarkModeToggle';
 import NavBar from '../components/NavBar';
 import ContactInfo from '../components/ContactInfo';
 
 export default function BehindTheBlog() {
   return (
     <main> 
+      <DarkModeToggle />
       <NavBar /> 
       <header className="section-header"> 
       <h1>Behind the Blog</h1>

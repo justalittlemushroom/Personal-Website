@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Home, X } from 'lucide-react'
 import { useRouter } from "next/navigation";
+import DarkModeToggle from "../components/DarkModeToggle";
 
 export default function Menu() {
   const router = useRouter();
@@ -26,6 +27,7 @@ export default function Menu() {
                     height={150}/>
             </div>
             <Link href="/" className="x-button" onClick={() => router.back()}> <X size={24}/> </Link>
+            <DarkModeToggle />
             <Link href="/" className="home-button"> <Home size={32}/> </Link>
             <div className="nav-section">
                 <header className="nav-section-header">Personal Journey</header>
